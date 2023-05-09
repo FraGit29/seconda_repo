@@ -4,7 +4,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.express as px
-
+from sklearn.linear_model import LinearRegression
 def main():
     st.write("testo prova")
 
@@ -21,7 +21,9 @@ def main():
     fig=plt.figure(figsize=(12,10))#inizializza una figura vuota
     plt.plot(x,y,'o') #la riempiamo con un plot
     plt.axis([0,10,0,30])#misure degli assi
-    
+
+   
+
     
     st.pyplot(fig) #la renderizziamo a video
 
